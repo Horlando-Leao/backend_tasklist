@@ -17,9 +17,7 @@ session = Session()
 
 Base = declarative_base()
 
-session.begin()
-mybases = session.execute("show databases;")
-session.commit()
+
 for x in mybases:
     print(x)
 

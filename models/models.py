@@ -1,12 +1,11 @@
-from sqlalchemy import Column, Integer, String, Float, ForeignKey
+from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-#from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
 
 class Usuario(Base):
-    __tablename__ = 'users'
+    __tablename__ = 'usuarios'
     id = Column(Integer, primary_key=True)
     nome = Column(String(50), unique=False)
     email = Column(String(120), unique=True)

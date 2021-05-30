@@ -38,6 +38,9 @@ class Pessoa(Base):
 
 Base.metadata.create_all(engine)
 
+# session.begin()
+# mybases = session.execute("show databases;")
+# session.commit()
 """
 p1 = Pessoa(nome='Fausto', idade=21)
 p2 = Pessoa(nome='Fabio', idade=22)

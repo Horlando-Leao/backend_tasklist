@@ -12,4 +12,4 @@ class Usuario(Base):
     password = Column(String(120), unique=False)
 
     def __repr__(self):
-        return f'User(nome = {self.name})'
+        return f'User(id={self.id}, nome={self.nome}, email={self.email}, password={self.password})'

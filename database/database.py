@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from env import environments
 
 
-def session_conn():
+def session_conn() -> objec
     engine = create_engine(f'mysql+mysqlconnector://'
                            f'{environments("USUARIOBANCO")}:{environments("SENHABANCO")}@'
                            f'{environments("ENDERECOBANCO")}:{environments("PORTABANCO")}/'
